@@ -3,7 +3,7 @@
 # Nome: pantheon-in
 # Versão: 0.1
 # Autor: Guilherme Machado 
-#				<linuxpotion@gmail.com>
+#        <linuxpotion@gmail.com>
 # 
 # Ano: 2019
 #
@@ -15,6 +15,7 @@
 
 echo -e "\n[extra-alucryd]\nServer = https://pkgbuild.com/~alucryd/\$repo/\$arch\n" | sudo tee -a /etc/pacman.conf
 #-------------------------------------------------------------
+
 sudo pacman -Sy pantheon-session-bzr \
 audience-bzr contractor-bzr dexter-contacts-bzr \
 eidete-bzr elementary-icon-theme-bzr elementary-scan-bzr \
