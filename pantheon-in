@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#
+#
+#
+#------------------------------------------------------------
+
+[[ $UID -ne 0 ]] && printf "\nExecute como root.\n"; exit 0
+
+#-------------------------------------------------------------
+
+echo -e "\n[extra-alucryd]\nServer = https://pkgbuild.com/~alucryd/\$repo/\$arch\n" | sudo tee -a /etc/pacman.conf
+#-------------------------------------------------------------
+sudo pacman -Sy pantheon-session-bzr \
+audience-bzr contractor-bzr dexter-contacts-bzr \
+eidete-bzr elementary-icon-theme-bzr elementary-scan-bzr \
+elementary-wallpapers-bzr gtk-theme-elementary-bzr geary \
+indicator-pantheon-session-bzr lightdm-pantheon-greeter-bzr \
+maya-calendar-bzr midori-granite-bzr noise-bzr \
+pantheon-backgrounds-bzr pantheon-calculator-bzr \
+pantheon-default-settings-bzr pantheon-files-bzr \
+pantheon-notify-bzr pantheon-print-bzr pantheon-terminal-bzr \
+plank-theme-pantheon-bzr scratch-text-editor-bz \
+snap-photobooth-bzr switchboard-bzr ttf-opensans \
+ttf-raleway-font-family ttf-dejavu ttf-droid ttf-freefont \
+ttf-liberation 
